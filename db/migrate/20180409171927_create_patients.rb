@@ -9,7 +9,6 @@ class CreatePatients < ActiveRecord::Migration[5.1]
       t.time :time
       t.string :condition
       t.string :status
-      t.string :clinic
       t.string :comments
 
       t.timestamps
