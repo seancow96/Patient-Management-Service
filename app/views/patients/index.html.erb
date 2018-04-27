@@ -1,9 +1,9 @@
 
 <div class="header">
-  <a href="#default" class="logo">Cowleys Patients Management</a>
+  <a href="patients#index" class="logo">Cowleys Patients Management</a>
   <div class="header-right">
-    <a class="active" href="#home">Home</a>
-      <%= link_to "Charges", user_path(current_user) %> 
+    <a class="active" href="patients#index">Home</a>
+      <%= link_to "Charges", charges_path(charges_path) %> 
   <%= link_to "Medicine", check_path %> 
    <%= link_to "Sign out",   destroy_user_session_path, method: :delete %>
 <%= link_to "Your Profile", user_path(current_user) %> 
