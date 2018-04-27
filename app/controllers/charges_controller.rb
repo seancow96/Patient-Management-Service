@@ -15,7 +15,7 @@ class ChargesController < ApplicationController
 
   # GET /charges/new
   def new
-     @charge = current_user.charges.build
+     @charge = Charge.new
   end
 
   # GET /charges/1/edit
@@ -25,7 +25,7 @@ class ChargesController < ApplicationController
   # POST /charges
   # POST /charges.jsons
   def create
-      @charge = current_user.charges.build(charge_params)
+    @charge = Charge.new(charge_params)
 
     respond_to do |format|
       if @charge.save
