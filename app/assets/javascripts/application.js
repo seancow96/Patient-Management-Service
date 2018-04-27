@@ -11,11 +11,12 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require highcharts
 //= require popper
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require Chart.bundle
 //= require chartkick
 //= require sortable-rails
-//= require_tree 
+//= require_tree .
 

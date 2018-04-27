@@ -24,7 +24,7 @@ gem 'ismedicine'
 gem 'isprime'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-gem "chartkick"
+gem 'chartkick', '~> 1.4', '>= 1.4.1'
 gem 'sortable-rails'
 gem 'bootstrap', '~> 4.1.0'
 gem 'jquery-rails'

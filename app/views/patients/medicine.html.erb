@@ -1,16 +1,15 @@
 <div class="header">
-  <a href="patients#index class="logo">Cowleys Patients Management</a>
+  <a href="/hospital_app/app/assets/images/hospital-bed-bugs.png" class="logo">Cowleys Patients Management</a>
   <div class="header-right">
-    <a class="active" href="patients#index">Home</a>
-      <%= link_to "Charges", charges_path %> 
-  <%= link_to "Medicine", check_path %> 
-   <%= link_to "Sign out",   destroy_user_session_path, method: :delete %>
+  <%= link_to "Home", patients_path %> 
+  <%= link_to "Charges", check_path %> 
+  <%= link_to "Medicine", charges_path %> 
+  <a> <%= link_to "Sign out",   destroy_user_session_path, method: :delete %>
 <%= link_to "Your Profile", user_path(current_user) %> 
     <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
     
   </div>
 </div>
-
 
 <br>
 <style>
