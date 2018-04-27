@@ -71,7 +71,50 @@ body {
 }
 </style>
 
-<h1>Enter a medicine</h1>
+<table style="width:20%">
+  <tr>
+    <th>Category</th>
+    <th>Condition</th> 
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Flu</td>
+  </tr>
+   <tr>
+    <td>2</td>
+    <td>ADHD</td>
+  </tr> 
+  <tr>
+    <td>3</td>
+    <td>Headache</td>
+  </tr> 
+  <tr>
+    <td>4</td>
+    <td>Headache</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Cold</td>
+  </tr> 
+  <tr>
+    <td>6</td>
+    <td> Stomach Pain</td>
+  </tr> 
+  <tr>
+    <td>7</td>
+    <td>Jackson</td>
+  </tr> 
+  <tr>
+    <td>8</td>
+    <td>Anxiety Medication</td>
+  </tr> 
+</table>
+
+
+
+
+<h1>Enter a number based an ilness</h1>
 <%= form_tag "/validate" do %>
 <%= text_field_tag :search_string %>
 <%= submit_tag "Check Medicine" %>
