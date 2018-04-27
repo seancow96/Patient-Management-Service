@@ -3,7 +3,7 @@
   <a href="#default" class="logo">Cowleys Patients Management</a>
   <div class="header-right">
     <a class="active" href="#home">Home</a>
-      <%= link_to "Charges", charges_path %> 
+      <%= link_to "Charges", user_path(current_user) %> 
   <%= link_to "Medicine", check_path %> 
    <%= link_to "Sign out",   destroy_user_session_path, method: :delete %>
 <%= link_to "Your Profile", user_path(current_user) %> 
@@ -89,7 +89,7 @@ body {
 </style>
 <h1>Patients</h1>
 
-  <table class="table patient-list sortable">
+  <table class="table patient-list sortable" id="patientTable">
   <thead>
     <tr>
       <th>Name</th>

@@ -1,5 +1,6 @@
 class ChargesController < ApplicationController
   before_action :set_charge, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /charges
   # GET /charges.json
@@ -14,7 +15,7 @@ class ChargesController < ApplicationController
 
   # GET /charges/new
   def new
-    @charge = Charge.new
+     @charge = current_user.charges.build
   end
 
   # GET /charges/1/edit
@@ -22,9 +23,9 @@ class ChargesController < ApplicationController
   end
 
   # POST /charges
-  # POST /charges.json
+  # POST /charges.jsons
   def create
-    @charge = Charge.new(charge_params)
+      @charge = current_user.charges.build(charge_params)
 
     respond_to do |format|
       if @charge.save

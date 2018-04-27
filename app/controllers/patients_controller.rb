@@ -3,15 +3,19 @@ class PatientsController < ApplicationController
 before_action :authenticate_user!
   # GET /patients
   # GET /patients.json
+  
+  
   def index
     @search = Patient.search(params[:q])
     @patients = @search.result
   end
+  
+  
  #Method to reccomend medicine for custom gem
-  def medicine
-     @input1 = params[:search_string]
-     @result = Checkmedicine.runcheck(@input1.to_i)
-  end
+   def medicine
+ @input1 = params[:search_string]
+ @result = Checkcondition.runcheck(@input1.to_i)
+ end
 
   # GET /patients/1
   # GET /patients/1.json

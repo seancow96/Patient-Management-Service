@@ -17,5 +17,5 @@
 //= require Chart.bundle
 //= require chartkick
 //= require sortable-rails
-//= require_tree .
+//= require_tree 
 

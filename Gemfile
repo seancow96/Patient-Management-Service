@@ -20,7 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 #gem 'ransack', '~> 1.8', '>= 1.8.8'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 # Custom gem
-gem 'medicine'
+gem 'ismedicine'
+gem 'isprime'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 gem "chartkick"

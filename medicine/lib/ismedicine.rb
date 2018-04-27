@@ -1,9 +1,9 @@
-class Checkmedicine
+class Checkcondition
     def self.runcheck(condition)
         if condition == 1
             ans = "Uniflu"
         elsif (condition == 2)
-            ans = "Benicole"
+            ans = "ritalin"
         elsif (condition == 3)
             ans = "Paracetamol"
         elsif (condition == 4)
