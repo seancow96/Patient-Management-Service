@@ -90,7 +90,7 @@ body {
 <h1>Patients</h1>
 
   <table class="table patient-list sortable" id="patientTable">
-  <thead>
+  <th> <%=sort_link @search, :clinic, "Sort by Clinic"%></th>
     <tr>
       <th>Name</th>
       <th>Address</th>
@@ -131,7 +131,7 @@ body {
 
 
 
-<h1>Charts</h1>
+<h1>Chart- Patient ages</h1>
 <%= pie_chart Patient.group(:age).count %>
 
 
